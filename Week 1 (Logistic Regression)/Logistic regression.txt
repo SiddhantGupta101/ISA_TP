@@ -1,0 +1,19 @@
+Logistic regression
+Logistic regression is a statistical analysis method used to predict a data value based on prior observations of a data set. A logistic regression model predicts a dependent data variable by analyzing the relationship between one or more existing independent variables. It is a classification or binary based model where it outputs discrete values such as 1 or 0 which normally represent Yes and No respectively.
+Sigmoid function 
+Logistic regression uses the sigmoid function to bring the output values within the range of 0-1.
+The sigmoid function is an S shaped function which at +inf approaches 1 and at -inf approaches 0
+P(E) = 1 / (1 + e^(-z)) - (1)
+Where z is a linear function of the features of the model.
+Cost Function(J)
+Instead of using a square mean cost function like in linear regression, we use a log loss cost function which heavily penalises the function for predicting wrong values at the extremes. The formula for the log loss cost function is given below
+J = 1/m(? ylog(h(x)) + (1-y)log(1-h(x)))
+
+Gradient descent 
+It is the procedure of repeatedly iterating the values of the parameters to minimize the cost function using the following formula:
+b = b - alpha?((1/(1+e^z))-y)x
+here b is our parameter being optimised, alpha is the learning rate, y is the output, z is our linear function
+
+Result
+The values that are outputted using the sigmoid function are seen as the probability of an event happening therefore during our predictions we take values>0.5 as being equal to 1 and values < 0.5 as 0
+
