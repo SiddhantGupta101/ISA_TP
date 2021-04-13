@@ -1,0 +1,17 @@
+Neural networks and CNN
+Neural networks are a series of algorithms that mimic the operations of a human brain to recognize relationships between vast amounts of data. Modeled loosely on the human brain, a neural net consists of thousands or even millions of simple processing nodes that are densely interconnected. Neural networks are divided into layers where each layer receives data from the previous layer and forwards data to the next layer. The layers are made of nodes. A node is just a place where computation happens, and acc to the computation either the signal is amplified or damped.
+There are two methods of propagating through a neural network i.e. forward propagation or backward propagation. Forward propagation (or forward pass) refers to the calculation and storage of intermediate variables (including outputs) for a neural network in order from the input layer to the output layer whereas Backpropagation refers to the method of calculating the gradient of neural network parameters. In short, the method traverses the network in reverse order, from the output to the input layer, according to the chain rule from calculus. The algorithm stores any intermediate variables (partial derivatives) required while calculating the gradient with respect to some parameters.
+CNN(Convolutional Neural Network)
+a convolutional neural network (CNN, or ConvNet) is a class of deep neural networks, most commonly applied to analyzing visual imagery. CNNs are regularized versions of multilayer perceptrons. A Perceptron is an algorithm used for supervised learning of binary classifiers. Binary classifiers decide whether an input, usually represented by a series of vectors, belongs to a specific class. In short, a perceptron is a single-layer neural network. 
+CNN image classifications takes an input image, process it and classify it under certain categories. Computers sees an input image as array of pixels and it depends on the image resolution.
+Convolution is the first layer to extract features from an input image. Convolution preserves the relationship between pixels by learning image features using small squares of input data.
+Convolution of an image with different filters can perform operations such as edge detection, blur and sharpen by applying filters.
+The various different filters are as follows:
+Stride- Stride is the number of pixels shifts over the input matrix. When the stride is 1 then we move the filters to 1 pixel at a time.
+Padding- Sometimes filter does not fit perfectly fit the input image. We can then either pad the picture with zeros to make it fit or drop the part of the image where the filter did not work
+Non Linearity (ReLU)- ReLU stands for Rectified Linear Unit for a non-linear operation. The output is ƒ(x) = max(0,x).
+Pooling Layer
+Pooling layers section would reduce the number of parameters when the images are too large. Spatial pooling is the process of reducing parameters while keeping the important information intact.
+
+Fully Connected Layer
+The layer we call as FC layer, we flattened our matrix into vector and feed it into a fully connected layer like a neural network.
